@@ -1,0 +1,93 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_audio_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sira_bg_gnw"
+    android:orientation="vertical" >
+
+    <!-- <include layout="@layout/top" /> -->
+
+    <ImageView
+        android:id="@+id/iv_rayaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/rayaa" />
+
+    <ImageView
+        android:id="@+id/iv_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_rayaa"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cart_separatoor" />
+
+    <ImageView
+        android:id="@+id/iv_muhammedPBUH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_separator"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/muhammed_gn" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cart_separatoor"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_muhammedPBUH"
+        android:layout_centerHorizontal="true"
+        android:text="Title"
+        android:textColor="#FFFFFF"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_videoWatched"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:text="تم الإستماع لهذا الدرس من قبل"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_videoWatched"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_toLeftOf="@+id/tv_videoWatched"
+        android:src="@drawable/video_watched"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+                android:layout_marginBottom="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_toRightOf="@+id/iv_rayaa"
+        android:background="@drawable/btn_about_small"
+        android:text="انهاء الدرس"
+        android:textColor="@drawable/text_color" />
+
+</RelativeLayout>
